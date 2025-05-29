@@ -12,7 +12,7 @@ BUCKET_NAME = "cdn-gcs-bucket1"  # Substitua se o nome for diferente
 VIDEO_FOLDER = "videos"
 
 # 🌐 IP fixo do Master (substitua pelo IP interno se estiver testando no GCP)
-MASTER_IP = "http://10.10.0.67:8000"  # Substitua se necessário
+MASTER_IP = "http://10.10.0.68:8000"  # Substitua se necessário
 
 def upload_video(filename):
     client = storage.Client.from_service_account_json(GCS_KEY_PATH)
